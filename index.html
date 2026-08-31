@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Habiba 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="background">
+        <div class="floating-hearts"></div>
+        <div class="floating-stars"></div>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+        <span class="music-icon">🎵</span>
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Section 1: Landing Screen -->
+    <section class="section landing-screen active" id="landing">
+        <div class="glass-card">
+            <h1 class="title">Hey Habiba 💖</h1>
+            <p class="subtitle">I have something special for you...</p>
+            <button class="btn-primary" id="beginBtn">Click to Begin 🎉</button>
+        </div>
+    </section>
+
+    <!-- Section 2: Birthday Reveal -->
+    <section class="section birthday-reveal" id="birthday">
+        <div class="glass-card">
+            <h1 class="title">Happy Birthday Habiba 🎂✨</h1>
+            <div class="typing-container">
+                <p class="typing-text" id="typingText"></p>
+            </div>
+            <button class="btn-primary" id="friendshipBtn">Continue 💫</button>
+        </div>
+        <div class="confetti-container" id="confetti"></div>
+    </section>
+
+    <!-- Section 3: Friendship Section -->
+    <section class="section friendship-section" id="friendship">
+        <div class="glass-card">
+            <h2 class="section-title">2 Years of Beautiful Friendship 💫</h2>
+            <div class="counter-container">
+                <div class="counter-item">
+                    <span class="counter-number" id="daysCounter">0</span>
+                    <span class="counter-label">Days</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number">∞</span>
+                    <span class="counter-label">Memories</span>
+                </div>
+            </div>
+            <div class="floating-cards">
+                <div class="memory-card">
+                    <p>From strangers to best friends</p>
+                </div>
+                <div class="memory-card">
+                    <p>Laughs, fights, and everything in between</p>
+                </div>
+                <div class="memory-card">
+                    <p>Still going strong 💪❤️</p>
+                </div>
+                <div class="memory-card">
+                    <p>You make every moment brighter ✨</p>
+                </div>
+                <div class="memory-card">
+                    <p>Grateful for every memory we've made 🌟</p>
+                </div>
+                <div class="memory-card">
+                    <p>Best friends who became family 💫</p>
+                </div>
+                <div class="memory-card">
+                    <p>Through thick and thin, always together 🤝</p>
+                </div>
+                <div class="memory-card">
+                    <p>You're the sister I got to choose 👯‍♀️</p>
+                </div>
+            </div>
+            <button class="btn-primary" id="messageBtn">Read My Message 💌</button>
+        </div>
+    </section>
+
+    <!-- Section 4: Personal Message -->
+    <section class="section message-section" id="message">
+        <div class="glass-card letter-card">
+            <div class="letter-header">
+                <span class="letter-icon">💌</span>
+                <h3>A Special Note For You</h3>
+            </div>
+            <div class="letter-content">
+                <p>Dear Habiba,</p>
+                <p>These 2 years with you have been truly amazing. Thank you for being there, for understanding me, and for making life more beautiful.</p>
+                <p>I hope this birthday brings you all the happiness you deserve 🎉❤️</p>
+                <p class="letter-signature">With love ❤️</p>
+            </div>
+            <button class="btn-primary" id="funBtn">Let's Have Some Fun 🎮</button>
+        </div>
+    </section>
+
+    <!-- Section 5: Fun Interaction -->
+    <section class="section fun-section" id="fun">
+        <div class="glass-card">
+            <h2 class="section-title">Quick Question! 😄</h2>
+            <p class="question-text">Do you like this surprise?</p>
+            <div class="button-group">
+                <button class="btn-yes" id="yesBtn">YES! 😄</button>
+                <button class="btn-no" id="noBtn">NO 😢</button>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="popup-emoji">😎❤️</span>
+                <p class="popup-text">I knew it!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Final Screen -->
+    <section class="section final-screen" id="final">
+        <div class="glass-card">
+            <h1 class="final-title">Once Again, Happy Birthday Habiba 💖</h1>
+            <p class="final-subtitle">To many more years of friendship ✨</p>
+            <div class="heart-animation">
+                <span class="heart">❤️</span>
+                <span class="heart">💖</span>
+                <span class="heart">💕</span>
+            </div>
+            <button class="btn-primary" id="restartBtn">Relive the Magic 🔄</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
